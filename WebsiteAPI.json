@@ -1,0 +1,10 @@
+{
+  "home": {
+    "image": "http",
+    "fullName": "Sewak Gautam",
+    "description": "Jack of All Master of Javascript ",
+    "socialLinks": {
+      "github": "https://localhost:/"
+    }
+  }
+}
