@@ -5,7 +5,7 @@ function Home() {
     <>
       <div className="main">
         <div className="wrapper">
-          <img className='image' src={userImage} />
+          <img className="image" src={userImage} />
           <h1>
             Sewak Gautam<span className="dot">.</span>
           </h1>
@@ -31,11 +31,11 @@ function Home() {
           <h1 className="marqueH1">ABOUT ME </h1>
 
           <div className="details">
-            <p style={{ width: "500px" }} className="title">
+            <p className="title">
               Howdy, fellow digital trailblazer!! I'm Sewak, your friendly
               neighborhood code wizard 🧙‍♂️.
             </p>
-            <p style={{ textAlign: "justify" }}>
+            <p style={{ textAlign: "justify" }} className="description">
               I've tamed the wilds of JavaScript, frolicked in the fields of
               Pern (Postgres, electron, react, Nest.js), and made bugs disappear
               faster than a magician with a hat full of rabbits 🎩🐇. If you're
@@ -49,20 +49,20 @@ function Home() {
           </div>
         </div>
       </div>
-      <div className="projects">
+      {/* <div className="projects">
         <div className="my_projects">
           <h1>PROJECTS</h1>
           <div className="details">
             <div className="projectList">
 
             </div>
-            {/* <Marquee pauseOnHover>
+            <Marquee pauseOnHover>
               <h1 className="marqueH1">&lt;ABOUT ME/&gt; </h1>
               <h1 className="marqueH1">&lt;ABOUT ME/&gt; </h1>
-            </Marquee> */}
+            </Marquee>
           </div>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

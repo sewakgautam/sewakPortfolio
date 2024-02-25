@@ -32,7 +32,7 @@
 
 .projects {
   background: #00091B;
-  height: 100vh;
+  height: 60em;
 }
 
 @keyframes fadeIn {
@@ -99,7 +99,6 @@ h1 {
   margin: 18px;
   font-family: 'Muli', sans-serif;
   font-weight: normal;
-
 }
 
 .icons {
@@ -133,10 +132,8 @@ h1 {
 }
 
 .about {
-  padding: 100px 0;
-  /* background-color: #161B22; */
   color: #00091B;
-  height: 70vh;
+  height: 55em;
 }
 
 /*9cb1df  */
@@ -169,27 +166,69 @@ h1 {
   position: relative;
   display: flex;
   flex-direction: row;
-  margin-left: 12vh;
-  padding: 15vh 25vh 10vh 25vh;
+  justify-content: center;
+  padding: 10.125em 16.875em;
 }
 
+@media (max-width: 800px) {
+  /* .details {
+    flex-direction: column;
+    padding: .5em .5em;
+    margin-left: 0px;
+    gap: 10px;
+  } */
 
-.my_info .title {
+  /* .marqueH1 {
+    top: 120%;
+    font-size: 100px;
+    margin: 40px 100px;
+  } */
+
+}
+
+@media (max-width:1200px) {
+  .details {
+    flex-direction: column;
+    padding: 8em 8em;
+    margin-left: 0px;
+    gap: 10px;
+  }
+
+  .marqueH1 {
+    top: 110%;
+    font-size: 40px;
+  }
+
+  .description {
+    font-size: 15px;
+  }
+
+  .title {
+    font-size: 15px;
+  }
+}
+
+.title {
+  flex: 40%;
   font-weight: 600;
   text-align: justify;
   font-size: 30px;
   color: #00091B;
+
 }
 
 
-.details p {
-  margin-left: 25px;
-  margin-top: 10px;
+.details {
+  gap: 30px;
+}
+
+
+.description {
+  flex: 60%;
   text-align: left;
   font-family: poppins;
   font-size: 20px;
   color: #00091B;
-  width: 70vh;
   text-align: left;
 }
 
