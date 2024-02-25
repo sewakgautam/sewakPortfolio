@@ -133,12 +133,12 @@ h1 {
 
 .about {
   color: #00091B;
-  height: 55em;
+  height: 60em;
 }
 
 /*9cb1df  */
 
-.marqueH1 {
+.aboutmeHeading {
   position: absolute;
   font-weight: bolder;
   font-family: 'Poppins', sans-serif;
@@ -147,19 +147,19 @@ h1 {
   top: 160%;
   opacity: 20%;
   color: #00091B;
-  padding: 30px 0;
 }
 
-.my_projects h1 {
+.projectsH1 {
   position: absolute;
   font-weight: bolder;
   font-family: 'Poppins', sans-serif;
   font-size: 120px;
   margin: 40px 100px;
-  top: 265%;
   opacity: 20%;
   color: #2ebb64;
   padding: 30px 0;
+  top: 265%;
+  margin: 90px;
 }
 
 .details {
@@ -170,23 +170,46 @@ h1 {
   padding: 10.125em 16.875em;
 }
 
-@media (max-width: 800px) {
-  /* .details {
+@media screen and (max-width: 800px) {
+  .details {
     flex-direction: column;
-    padding: .5em .5em;
-    margin-left: 0px;
-    gap: 10px;
-  } */
+    padding: 13em 3em !important;
+    margin-left: 0px !important;
+    gap: 10px !important;
+  }
 
-  /* .marqueH1 {
+  .title {
+    text-align: center !important;
+  }
+
+  /* .aboutmeHeading {
     top: 120%;
     font-size: 100px;
     margin: 40px 100px;
   } */
 
+  .aboutmeHeading {
+    top: 100% !important;
+    font-size: 60px !important;
+    margin: 70px 40px !important;
+
+  }
+
+  .projectsH1 {
+    top: 280% !important;
+    font-size: 50px !important;
+    margin: 70px !important;
+  }
+
+  .comingSoon {
+    /* mix-blend-mode: multiply;  */
+    height: 100px !important;
+    margin-top: 100px !important;
+  }
+
 }
 
-@media (max-width:1200px) {
+@media screen and (max-width:1200px) {
   .details {
     flex-direction: column;
     padding: 8em 8em;
@@ -194,9 +217,9 @@ h1 {
     gap: 10px;
   }
 
-  .marqueH1 {
-    top: 110%;
-    font-size: 40px;
+  .aboutmeHeading {
+    top: 150%;
+    font-size: 90px;
   }
 
   .description {
@@ -206,7 +229,19 @@ h1 {
   .title {
     font-size: 15px;
   }
+
+  .projectsH1 {
+    top: 235%;
+    font-size: 90px;
+  }
+  .comingSoon {
+    /* mix-blend-mode: multiply;  */
+    filter: invert(1);
+    height: 200px;
+  }
 }
+
+
 
 .title {
   flex: 40%;
@@ -215,6 +250,10 @@ h1 {
   font-size: 30px;
   color: #00091B;
 
+}
+.projectList{
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -234,4 +273,10 @@ h1 {
 
 .my_info img {
   height: 12vh;
+}
+
+.comingSoon {
+  /* mix-blend-mode: multiply;  */
+  filter: invert(1);
+  margin-top: 100px;
 }

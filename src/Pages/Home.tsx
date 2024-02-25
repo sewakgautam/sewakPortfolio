@@ -28,8 +28,7 @@ function Home() {
       </div>
       <div className="about">
         <div className="my_info">
-          <h1 className="marqueH1">ABOUT ME </h1>
-
+          <h1 className="aboutmeHeading">ABOUT ME </h1>
           <div className="details">
             <p className="title">
               Howdy, fellow digital trailblazer!! I'm Sewak, your friendly
@@ -49,20 +48,16 @@ function Home() {
           </div>
         </div>
       </div>
-      {/* <div className="projects">
+      <div className="projects">
         <div className="my_projects">
-          <h1>PROJECTS</h1>
-          <div className="details">
+          <h1 className="projectsH1">PROJECTS</h1>
+          <div className="projectDetails">
             <div className="projectList">
-
+              <img className='comingSoon' src='https://clipart-library.com/new_gallery/14-142114_coming-soon-logo-png-coming-soon-png-black.png' height={'500px'}></img>
             </div>
-            <Marquee pauseOnHover>
-              <h1 className="marqueH1">&lt;ABOUT ME/&gt; </h1>
-              <h1 className="marqueH1">&lt;ABOUT ME/&gt; </h1>
-            </Marquee>
           </div>
         </div>
-      </div> */}
+      </div>
     </>
   );
 }
