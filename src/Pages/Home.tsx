@@ -1,6 +1,114 @@
+// import {  useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import userImage from "../assets/mf-avatar.svg";
+import projects from "../Json/Projects.json";
 
 function Home() {
+  // const [slideIndex, setSlideIndex] = useState(0);
+  // const changeSlide = (n: number) => {
+  //   setSlideIndex(n);
+  // };
+
+  function truncateText(text: string, maxLength: number) {
+    // Split the text into an array of words
+    const words = text.split(" ");
+
+    // Check if the text length is already within the desired limit
+    if (words.length <= maxLength) {
+      return text; // Return the original text
+    }
+
+    // Otherwise, truncate the text to the desired length
+    const truncatedWords = words.slice(0, maxLength); // Take the first maxLength words
+    const truncatedText = truncatedWords.join(" "); // Join them back into a string
+    return truncatedText + " ......"; // Append "..." to indicate truncated content
+  }
+
+  function ShowSlide() {
+    const data: {
+      title: string;
+      thumbnail: string;
+      description: string;
+      projectLink: string;
+      githubLink: string;
+    }[] = projects.Projects!;
+    return (
+      <>
+        {data.map((datas, i) => {
+          return (
+            <div className="projectList">
+              <div className="projectCards">
+                <img className="projectImage" src={data[i].thumbnail}></img>
+                <div className="projectTextContainer">
+                  <h2>{data[i].title}</h2>
+                  <p style={{ textAlign: "justify" }}>
+                    {truncateText(data[i].description, 50)}
+                  </p>
+                  <div
+                    style={{
+                      display: "flex",
+                      gap: "10px",
+                      justifyContent: "space-between",
+                    }}
+                  >
+                    <a
+                      className="projectBtnhref"
+                      href={data[i].projectLink}
+                      target="_blank"
+                    >
+                      <button className="projectBtn">View Project</button>
+                    </a>
+                    <a
+                      className="projectBtnhref"
+                      href={data[i].githubLink}
+                      target="_blank"
+                    >
+                      <button className="projectBtn">
+                        <i className="fa fa-github" style={{fontSize:"18px"}}></i>{" "}
+                        Contribute
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          );
+        })}
+      </>
+    );
+  }
+
+  // setTimeout(() => {
+  //   const length = projects.Projects.length;
+  //   // console.log("this is length", length);
+  //   const data = Math.floor(Math.random() * length);
+  //   if (data > projects.Projects.length) setSlideIndex(0);
+  //   setSlideIndex(data);
+  // }, 50000);
+
+  // function rotateArray(arr, timeInterval) {
+  //   let currentIndex = 0;
+
+  //   function printAndRotate() {
+  //     const chunk = arr.slice(currentIndex, currentIndex + 3);
+  //     console.log(chunk);
+
+  //     currentIndex += 3;
+  //     if (currentIndex >= arr.length) {
+  //       currentIndex = 0;
+  //     }
+
+  //     setTimeout(printAndRotate, timeInterval * 1000);
+  //   }
+
+  //   printAndRotate();
+  // }
+
+  // const a = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  // const timeInterval = 5000; // Time interval in seconds
+
+  // rotateArray(a, timeInterval);
+
   return (
     <>
       <div className="main">
@@ -52,9 +160,9 @@ function Home() {
         <div className="my_projects">
           <h1 className="projectsH1">PROJECTS</h1>
           <div className="projectDetails">
-            <div className="projectList">
-              <img className='comingSoon' src='https://clipart-library.com/new_gallery/14-142114_coming-soon-logo-png-coming-soon-png-black.png' height={'500px'}></img>
-            </div>
+            {/* <img className='comingSoon' src='https://clipart-library.com/new_gallery/14-142114_coming-soon-logo-png-coming-soon-png-black.png' height={'500px'}></img> */}
+            {/* {showSlide()} */}
+            <ShowSlide />
           </div>
         </div>
       </div>

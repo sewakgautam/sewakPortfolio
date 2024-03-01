@@ -1,0 +1,18 @@
+{
+  "Projects": [
+    {
+      "title": "Erase A Scene",
+      "thumbnail": "https://scontent.fbir2-1.fna.fbcdn.net/v/t39.30808-6/387872910_2371515916375412_5321914193998853886_n.jpg?_nc_cat=106&cb=99be929b-b574a898&ccb=1-7&_nc_sid=524774&_nc_ohc=Eu-ISV5gSeUAX-yTrYB&_nc_ht=scontent.fbir2-1.fna&oh=00_AfAa3sRSJ86E1g1pALrA9Hk5pTV1R6pC_BBQwt1BEtejwg&oe=65E736AF",
+      "description": "Erase-a-Scene, which allows effortlessly removing backgrounds from photos by simply inputting an image link. The magic happens as the tool has the power of remove.bg API to seamlessly eliminate the background from your image.      ",
+      "githubLink": "https://github.com/sewakgautam/Erase-a-scene",
+      "projectLink": "https://bgremove.sewakgautam.com.np/"
+    },
+    {
+      "title": "Query Pixel",
+      "thumbnail": "https://camo.githubusercontent.com/c77be615b24b7056c3e2209ad1fee15005d378cdfd87afdec4962d493ee9591f/68747470733a2f2f692e6962622e636f2f324b784d6b70502f7175657279706978656c2d73632e706e67",
+      "description": "QueryPix, which empowers you to search for images from the internet using Unsplash. Unsplash is a website dedicated to proprietary stock photography. Since 2021, it has been owned by Getty Images. ",
+      "githubLink": "https://github.com/sewakgautam/QueryPix",
+      "projectLink": "https://querypixel.sewakgautam.com.np/"
+    }
+  ]
+}

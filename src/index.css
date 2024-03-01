@@ -45,7 +45,6 @@
     top: 100;
     opacity: 1;
   }
-
 }
 
 @-webkit-keyframes fadeIn {
@@ -61,9 +60,9 @@
 
 }
 
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 15px;
-}
+} */
 
 
 
@@ -196,7 +195,7 @@ h1 {
   }
 
   .projectsH1 {
-    top: 280% !important;
+    top: 285% !important;
     font-size: 50px !important;
     margin: 70px !important;
   }
@@ -205,6 +204,16 @@ h1 {
     /* mix-blend-mode: multiply;  */
     height: 100px !important;
     margin-top: 100px !important;
+  }
+
+  .projectCards{
+    width: 10em !important;
+    height: 100% !important;
+  }
+  .projectImage{
+    width: 10em !important;
+    height: 5em !important;
+
   }
 
 }
@@ -234,6 +243,7 @@ h1 {
     top: 235%;
     font-size: 90px;
   }
+
   .comingSoon {
     /* mix-blend-mode: multiply;  */
     filter: invert(1);
@@ -251,9 +261,14 @@ h1 {
   color: #00091B;
 
 }
-.projectList{
+
+
+.projectDetails {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  gap: 20px;
+  padding: 100px;
 }
 
 
@@ -275,8 +290,63 @@ h1 {
   height: 12vh;
 }
 
-.comingSoon {
-  /* mix-blend-mode: multiply;  */
-  filter: invert(1);
-  margin-top: 100px;
+.projectCards {
+  animation: fadeIn 2000ms ease;
+  background-color: #092D2A;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 100%;
+  width: 25em;
+  border-radius: 4px;
+
+
+}
+
+.projectImage {
+  height: 15em;
+  width: 25em;
+  /* margin: 20px 0px 0px 0px; */
+  object-fit: cover;
+  border-radius: 4px 4px 0px 0px;
+
+}
+
+.projectTextContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+@keyframes projectFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.projectBtnhref {
+  height: 40px;
+  width: 400px;
+  border-radius: 4px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  background-color: #2EBB64;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.projectBtn {
+  border: none;
+  background-color: #2EBB64;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  gap:100px;
 }
