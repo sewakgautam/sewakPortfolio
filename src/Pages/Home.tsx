@@ -1,5 +1,5 @@
 // import {  useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+// import { Link, useNavigate } from "react-router-dom";
 import userImage from "../assets/mf-avatar.svg";
 import projects from "../Json/Projects.json";
 
@@ -34,7 +34,7 @@ function Home() {
     }[] = projects.Projects!;
     return (
       <>
-        {data.map((datas, i) => {
+        {data.map((_, i) => {
           return (
             <div className="projectList">
               <div className="projectCards">
